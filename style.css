@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;500;700;900&display=swap");
+
+:root {
+	/* ## Colors */
+	/* ### Primary */
+	--Light-red: hsl(0, 100%, 67%);
+	--Light-red-bg: hsla(0, 100%, 67%, 0.1);
+	--Orangey-yellow: hsl(39, 100%, 56%);
+	--Orangey-yellow-bg: hsla(39, 100%, 56%, 0.1);
+	--Green-teal: hsl(166, 100%, 37%);
+	--Green-teal-bg: hsla(166, 100%, 37%, 0.1);
+	--Cobalt-blue: hsl(234, 85%, 45%);
+	--Cobalt-blue-bg: hsla(234, 85%, 45%, 0.1);
+
+	/* ## Gradients */
+	--Light-slate-blue-bg: hsl(252, 100%, 67%);
+	--Light-royal-blue-bg: hsl(241, 81%, 54%);
+	--Violet-blue-circle: hsla(256, 72%, 46%, 1);
+	--Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+	/* ### Neutral */
+	--White: hsl(0, 0%, 100%);
+	--Pale-blue: hsl(221, 100%, 96%);
+	--Light-lavender: hsl(241, 100%, 89%);
+	--Dark-gray-blue: hsl(224, 30%, 27%);
+
+	/* ### Font-size */
+	--Font-size-paragraphs: 18px;
+	--W500: 500;
+	--W700: 700;
+	--W900: 900;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Hanken Grotesk", sans-serif;
+	/* line-height: 1.5; */
+	font-size: var(--Font-size-paragraphs);
+	background-color: var(--Pale-blue);
+}
+
+.conteiner {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+}
+
+.content {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 730px;
+	height: 510px;
+	margin: auto;
+	border: 0;
+	background-color: var(--White);
+	border-radius: 20px;
+	box-shadow: 10px 10px 20px var(--Light-lavender);
+}
+
+/* --- Left part--- */
+.content-result {
+	width: 50%;
+	max-width: 365px;
+	background: linear-gradient(to bottom, var(--Light-slate-blue-bg), var(--Light-royal-blue-bg));
+	border-radius: 20px;
+	padding: 25px;
+}
+
+.result-head {
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+
+.result-head > h1 {
+	color: var(--Light-lavender);
+	font-size: 1.5em;
+	font-weight: var(--W700);
+}
+
+.result-circle {
+	width: 65%;
+	padding: 15% 0 15%;
+	margin: 5% auto;
+	background: linear-gradient(to bottom, var(--Violet-blue-circle), var(--Persian-blue-circle));
+	border-radius: 50%;
+	text-align: center;
+}
+
+.result-percent {
+	color: var(--White);
+	font-weight: var(--W700);
+	font-size: 56px;
+}
+
+.res-percent {
+}
+
+.result-total {
+	color: var(--Light-lavender);
+	opacity: 0.6;
+}
+
+.res-total {
+}
+
+.result-paragraf {
+	text-align: center;
+	margin: 15% 10%;
+}
+
+.result-paragraf-head {
+	color: var(--White);
+	font-size: 1.7em;
+	font-weight: var(--W700);
+}
+
+.result-paragraf > p {
+	color: var(--Light-lavender);
+	margin-top: 10%;
+}
+
+/* --- Right part--- */
+
+.content-summary {
+	width: 50%;
+	max-width: 365px;
+	padding: 25px;
+}
+
+.summary-head {
+	color: var(--Dark-gray-blue);
+	font-size: 1.5em;
+	font-weight: var(--W700);
+}
+.summary-result {
+	margin-top: 15%;
+	margin-bottom: 10%;
+	font-weight: var(--W500);
+}
+
+.summary-item {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 15px 0;
+	padding: 15px 13px;
+	border-radius: 15px;
+	align-items: center;
+}
+
+.item-name {
+}
+
+.item-name > img {
+	float: left;
+	height: 24px;
+}
+
+.summary-name {
+	/* float: left; */
+	margin-left: 35px;
+}
+
+.item-result {
+	color: var(--Dark-gray-blue);
+}
+
+.reaction {
+	background-color: var(--Light-red-bg);
+	color: var(--Light-red);
+}
+.memory {
+	background-color: var(--Orangey-yellow-bg);
+	color: var(--Orangey-yellow);
+}
+.verbal {
+	background-color: var(--Green-teal-bg);
+	color: var(--Green-teal);
+}
+.visual {
+	background-color: var(--Cobalt-blue-bg);
+	color: var(--Cobalt-blue);
+}
+.summary-btn {
+	width: 100%;
+	background-color: var(--Dark-gray-blue);
+	border-radius: 30px;
+	padding: 10px 0;
+	margin-top: 15%;
+	font-size: 1em;
+	font-weight: var(--W500);
+	text-align: center;
+}
+.summary-btn:hover {
+	background-color: var(--Light-royal-blue-bg);
+	cursor: pointer;
+}
+.btn {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+/* ---footer--- */
+.attribution {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	font-size: 11px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+.varning {
+	position: absolute;
+	top: 0;
+	/* margin: auto; */
+	text-align: center;
+	color: red;
+	text-transform: uppercase;
+	font-weight: var(--W900);
+	display: none;
+}
+
+@media screen and (min-width: 375px) and (max-width: 500px) {
+	.content {
+		width: 365px;
+		height: auto;
+		flex-wrap: wrap;
+	}
+	.content-result {
+		width: 100%;
+	}
+	.content-summary {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.content {
+		display: none;
+	}
+	.varning {
+		display: inline;
+	}
+}
