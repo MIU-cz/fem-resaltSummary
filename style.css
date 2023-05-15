@@ -96,16 +96,16 @@ body {
 	font-size: 56px;
 }
 
-.res-percent {
-}
+/* .res-percent {
+} */
 
 .result-total {
 	color: var(--Light-lavender);
 	opacity: 0.6;
 }
 
-.res-total {
-}
+/* .res-total {
+} */
 
 .result-paragraf {
 	text-align: center;
@@ -152,8 +152,8 @@ body {
 	align-items: center;
 }
 
-.item-name {
-}
+/* .item-name {
+} */
 
 .item-name > img {
 	float: left;
